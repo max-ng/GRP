@@ -1,4 +1,4 @@
-# GRP
+# General Route Planner
 
 GRP(General Route Planner) is a high-performance and open-source routing engine for multiple pickup/dropoffs routing optimization and multi-vehicle allocation.
 

@@ -1,7 +1,18 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80834993-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-80834993-5');
+    </script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Route Planner</title>
     <link rel="stylesheet" href="./css/leaflet.css" />
     <link rel="stylesheet" href="./css/leaflet.extra-markers.css">
     <script src="./js/d3.min.js"></script>
@@ -73,14 +84,14 @@
             float: left;
             background: white;
             height: 100%;
-            width: 25%;
+            width: 30%;
         }
         
         .right {
             float: right;
             top: 0;
             height: 100%;
-            width: 75%;
+            width: 70%;
         }
         
         .center {
@@ -144,17 +155,52 @@
             height: 6px;
             background-color: black;
         }
+
+        h1, h2, h3{
+            margin:0 0;
+        }
+
+         h2, h3{
+            /*text-align:center;*/
+            width:100%;
+        }
     </style>
     <div class="wrap">
         <div class="left">
-            <h3 style="text-align:center;width:100%;margin:0 0;">Using AI to maximize traffic</h1>
-      Parcel limit per truck: <input id="parcelLimit"  placeholder="None" type="text" ></input>
-      <button id=next >calculate</button>
-      <p>GRO(General Route Planner) is a new and open-source routing engine for multiple pickup/dropoffs routing optimization and multi-vehicle allocation. </p>
-      <button id=demo0 >quick demo with 10 stops</button>
-      <div id="myDiv" style="width:350px;height:20px;"></div>
-        <div id="result" style="margin: 0 10;">
-       </div>
+            <h1>General Route Planner</h1>
+
+            <h2>Using AI to Maximize Logistics</h2>
+
+            <p>GRP(General Route Planner) is a high-performance and open-source routing engine for multiple pickup/drop-offs routing optimization and multi-vehicle allocation problem. The algorithm is designed to work faster and finding better cost minimum than genetic algorithms, tabu search and ant colony optimization in this problem. </p>
+
+            <h2>Online Demo</h2>
+
+            <p>Each order contains a <span style="color:green">pickup</span> location and a <span style="color:blue">drop-off</span> location. <p>
+
+            <p>Click on the map to add the pickup and drop-off locations. Then click "calucate". For quick demonstration, just click the "quick demo with 10 stops" button. </p>
+
+            <input id="parcelLimit"  placeholder="Parcel limit per truck:" type="text" ></input>
+            <button id=next >calculate</button>
+            <button id=demo0 >quick demo with 10 stops</button>
+
+            <div id="myDiv" style="width:350px;height:20px;"></div>
+            <div id="result" style="margin: 0 10;">
+            </div>
+
+            <p>GRP is able to solved: </p>
+            <ul>
+              <li><b>multiple pickup/dropoffs routing optimization</b>: N to N delievey / 1 to N delivery / with or without parcel limit constraint.</li>
+              <li><b>multi-vehicle routing problem</b>: with or without parcel limit constraint.</li>
+            </ul>
+
+
+
+            <h2>Links</h2>
+
+            <p>Github: <a href="https://github.com/max-ng/GRP">https://github.com/max-ng/GRP</a></p>
+
+            <div><small>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></div>
+
     </div>
 
     <div class="right">

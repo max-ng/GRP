@@ -1,5 +1,6 @@
 # General Route Planner
 
+以技術換取空間，以技術換取時間。
 **GRP**(General Route Planner) is a high-performance and open-source routing engine for multiple pickup/dropoffs routing optimization and multi-vehicle allocation. 
 
 The algorithm is designed to work faster and finding better cost minimum than genetic algorithms, tabu search and ant colony optimization in this problem.
@@ -28,6 +29,14 @@ You can use one of the following distances within the optimzation:
 * Euclidean distance 
 * Distance from Haversine formula
 * Estimated distance of real world by [OSRM](https://github.com/Project-OSRM/osrm-backend)
+
+## Installation (The version with OSRM)
+1 Make sure you have installed and started the OSRM server. 
+2 cd grp_backend
+3 npm i
+4 npm start 
+5 replace the token in grp_frontend/web/demo.js with your own mapbox token. 
+6 open the grp_frontend/web/index.html file and you are ready to go. 
 
 ## Special Thanks 
 [OSRM](https://github.com/Project-OSRM/osrm-backend) is one of the best routing engines for 1 to 1 shortest paths in road networks.

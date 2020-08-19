@@ -1,6 +1,5 @@
 # General Route Planner
-
-以技術換取空間，以技術換取時間。  
+ 
 **GRP**(General Route Planner) is a high-performance and open-source routing engine for multiple pickup/dropoffs routing optimization and multi-vehicle allocation. 
 
 The algorithm is designed to work faster and finding better cost minimum than genetic algorithms, tabu search and ant colony optimization in this problem.
